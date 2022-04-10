@@ -1293,9 +1293,9 @@
                     e = t.$createElement,
                     a = t._self._c || e;
                 return a("section", {
-                    staticClass: "community bg-white"
+                    staticClass: "community"
                 }, [a("div", {
-                    staticClass: "container"
+                    staticClass: "container bot"
                 }, [a("div", {
                     staticClass: "community-block"
                 }, [a("p", {
@@ -1453,7 +1453,7 @@
                 }, [t._v("3 LVL - 1.5%")]), a("p", {
                     staticClass: "mb-0"
                 }, [t._v("4 LVL - 1%")]), a("p", [t._v("5 LVL - 0.5%")]), a("div", {
-                    staticClass: "bg-secondary rounded pb-3 pt-2 px-4"
+                    staticClass: "rounded pb-3 pt-2"
                 }, [a("p", {
                     staticClass: "mb-0"
                 }, [t._v("Your personal link:")]), a("div", [a("input", {
@@ -1467,7 +1467,7 @@
                 }), a("div", {
                     staticClass: "d-flex w-100"
                 }, [a("div", {
-                    staticClass: "mb-0 w-100 p-2 ps-3 bg-white rounded me-n11"
+                    staticClass: "mb-0 w-100 p-2 ps-3 rounded me-n11 refbox"
                 }, [a("small", {
                     staticClass: "py-1 mt-1 copy-link d-block text-truncate",
                     attrs: {
@@ -1490,7 +1490,7 @@
                 }, [t._v(t._s(t.copied || "copy"))])])])])])])])]), a("div", {
                     staticClass: "col-lg-12"
                 }, [a("div", {
-                    staticClass: "card border-0 mb-3"
+                    staticClass: "card border-0 mb-3 dark-style"
                 }, [t._m(10), a("div", {
                     staticClass: "card-body p-0"
                 }, [a("table", {
@@ -1903,7 +1903,7 @@
                     e = t.$createElement,
                     n = t._self._c || e;
                 return n("div", {
-                    staticClass: "card-header bg-white border-0 pb-0"
+                    staticClass: "border-0 pb-0"
                 }, [n("p", {
                     staticClass: "card-title mb-0"
                 }, [t._v("Your Farm")])])
@@ -1954,7 +1954,7 @@
                     e = t.$createElement,
                     n = t._self._c || e;
                 return n("div", {
-                    staticClass: "card-header bg-white border-0 pb-0"
+                    staticClass: "border-0 pb-0"
                 }, [n("p", {
                     staticClass: "card-title mb-0"
                 }, [t._v("Affiliate Program")])])
@@ -1977,7 +1977,7 @@
                     e = t.$createElement,
                     n = t._self._c || e;
                 return n("div", {
-                    staticClass: "card-header bg-white border-0 pb-0"
+                    staticClass: "card-header border-0 pb-0"
                 }, [n("p", {
                     staticClass: "card-title mb-0"
                 }, [t._v("Stake BNB")])])
@@ -2170,15 +2170,15 @@
                 return n("div", {
                     staticClass: "col-lg-12"
                 }, [n("div", {
-                    staticClass: "card border-0 mb-3"
+                    staticClass: "card border-0 mb-3 dark-style"
                 }, [n("div", {
-                    staticClass: "card-header bg-white border-0 pb-0"
+                    staticClass: "card-header border-0 pb-0"
                 }, [n("p", {
                     staticClass: "card-title mb-0"
                 }, [t._v("Read before use")])]), n("div", {
                     staticClass: "card-body"
                 }, [n("small", {
-                    staticClass: "fw-light mt-n3 d-block lh-xs"
+                    staticClass: "fw-light mt-n3 d-block lh-xs padding-top-20px"
                 }, [t._v(" The principal deposit cannot be withdrawn, the only return users can get are daily dividends and referral rewards. Payments is possible only if contract balance have enough BNB. Please analyze the transaction history and balance of the smart contract before investing. High risk - high profit, DYOR ")])])])])
             }, function () {
                 var t = this,
@@ -2400,8 +2400,6 @@
                                         o = n[3],
                                         c = n[4],
                                         l = n[5];
-                                    console.log("Aviable");
-                                    console.log(r);
                                     s > 0 && (t.isApproved = !0),
                                         t.BNBBalance = t.humanized(a, 3),
                                         t.totalDeposit = t.humanized(i.totalDeposit, 3),
