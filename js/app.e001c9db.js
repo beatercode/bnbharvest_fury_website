@@ -1488,7 +1488,7 @@
                 }, [t._v(" Copy ")])]), a("span", {
                     staticClass: "tooltip tron-tooltip"
                 }, [t._v(t._s(t.copied || "copy"))])])])])])])])]), a("div", {
-                    staticClass: "col-lg-12"
+                    staticClass: "col-lg-12 outBoxStakeBnb"
                 }, [a("div", {
                     staticClass: "card border-0 mb-3 dark-style"
                 }, [t._m(10), a("div", {
@@ -1522,22 +1522,8 @@
                 }, [t.getUserAccount ? a("div", {
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
-                    staticClass: "text-capitalize me-3"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), a("div", [t.isApproved ? a("span", {
-                    staticClass: "text-capitalize me-3"
-                }, [t._v("Total Earn: ∞ BNB")]) : t._e(), a("button", {
-                    staticClass: "border-0 bg-transparent ms-auto",
-                    on: {
-                        click: function (e) {
-                            t.rate = 2, t.showModal = !t.showModal
-                        }
-                    }
-                }, [a("img", {
-                    staticClass: "me-3",
-                    attrs: {
-                        src: n("f0ba")
-                    }
-                })])])]) : t._e(), a("form", {
+                    staticClass: "text-capitalize me-3 full-width-right"
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")])]) : t._e(), a("form", {
                     staticClass: "w-lg-75 ms-lg-auto ps-md-4"
                 }, [a("fieldset", {
                     staticClass: "d-flex w-lg-75 ms-auto"
@@ -1604,22 +1590,8 @@
                 }, [t.getUserAccount ? a("div", {
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
-                    staticClass: "text-capitalize me-3"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), a("div", [t.isApproved ? a("span", {
-                    staticClass: "text-capitalize me-3"
-                }, [t._v("Total Earn: " + t._s(t.total_earning_two) + " BNB")]) : t._e(), a("button", {
-                    staticClass: "border-0 bg-transparent ms-auto",
-                    on: {
-                        click: function (e) {
-                            t.rate = 5, t.showModal = !t.showModal
-                        }
-                    }
-                }, [a("img", {
-                    staticClass: "me-3",
-                    attrs: {
-                        src: n("f0ba")
-                    }
-                })])])]) : t._e(), a("form", {
+                    staticClass: "text-capitalize me-3 full-width-right"
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")])]) : t._e(), a("form", {
                     staticClass: "w-lg-75 ms-lg-auto ps-md-4"
                 }, [a("fieldset", {
                     staticClass: "d-flex w-lg-75 ms-auto"
@@ -1686,22 +1658,8 @@
                 }, [t.getUserAccount ? a("div", {
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
-                    staticClass: "text-capitalize me-3"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), a("div", [t.isApproved ? a("span", {
-                    staticClass: "text-capitalize me-3"
-                }, [t._v("Total Earn: " + t._s(t.total_earning_three) + " BNB")]) : t._e(), a("button", {
-                    staticClass: "border-0 bg-transparent ms-auto",
-                    on: {
-                        click: function (e) {
-                            t.rate = 3.5, t.showModal = !t.showModal
-                        }
-                    }
-                }, [a("img", {
-                    staticClass: "me-3",
-                    attrs: {
-                        src: n("f0ba")
-                    }
-                })])])]) : t._e(), a("form", {
+                    staticClass: "text-capitalize me-3 full-width-right"
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")])]) : t._e(), a("form", {
                     staticClass: "w-lg-75 ms-lg-auto ps-md-4"
                 }, [a("fieldset", {
                     staticClass: "d-flex w-lg-75 ms-auto"
@@ -1768,22 +1726,8 @@
                 }, [t.getUserAccount ? a("div", {
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
-                    staticClass: "text-capitalize me-3"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), a("div", [t.isApproved ? a("span", {
-                    staticClass: "text-capitalize me-3"
-                }, [t._v("Total Earn: " + t._s(t.total_earning_four) + " BNB")]) : t._e(), a("button", {
-                    staticClass: "border-0 bg-transparent ms-auto",
-                    on: {
-                        click: function (e) {
-                            t.rate = 3, t.showModal = !t.showModal
-                        }
-                    }
-                }, [a("img", {
-                    staticClass: "me-3",
-                    attrs: {
-                        src: n("f0ba")
-                    }
-                })])])]) : t._e(), a("form", {
+                    staticClass: "text-capitalize me-3 full-width-right"
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")])]) : t._e(), a("form", {
                     staticClass: "w-lg-75 ms-lg-auto ps-md-4"
                 }, [a("fieldset", {
                     staticClass: "d-flex w-lg-75 ms-auto"
