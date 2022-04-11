@@ -1268,7 +1268,8 @@
                     staticClass: "text-center pb-3"
                 }, [n("p", {
                     staticClass: "fw-bold fs-2"
-                }, [t._v("BNBHarvest")]), n("p", {}, [t._v(" #TOP Coin Community yield farm"), n("br"), t._v(" on Binance Smart Chain ")])])])
+                }, [t._v("BNBHarvest")]), n("p", { staticClass: "home-info" }, [t._v(" #TOP Coin Community yield farm")]),
+                n("p", {}, [t._v(" on Binance Smart Chain ")])])])
             }, function () {
                 var t = this,
                     e = t.$createElement,
@@ -1310,7 +1311,7 @@
                         src: n("6822")
                     }
                 }), a("p", {
-                    staticClass: "fs-5 fw-light"
+                    staticClass: "fs-5 fw-light home-info-2"
                 }, [t._v("Ironclad security")]), a("p", {
                     staticClass: "fw-light mb-0 mt-n1 lh-xs"
                 }, [a("small", [t._v("The smart contract code has been successful audited by independent company HazeCrypto which guarantees the protection of your assets from all external risks.")])])]), a("div", {
@@ -1321,7 +1322,7 @@
                         src: n("175a")
                     }
                 }), a("p", {
-                    staticClass: "fs-5 fw-light"
+                    staticClass: "fs-5 fw-light home-info-2"
                 }, [t._v("High & Stable APR")]), a("p", {
                     staticClass: "fw-light mb-0 mt-n1 lh-xs"
                 }, [a("small", [t._v("In the code sets the highest APR among all yield farms on BSC, rules of a smart contract can’t be changed, nothing can affect the amount of income.")])])]), a("div", {
@@ -1332,7 +1333,7 @@
                         src: n("c042")
                     }
                 }), a("p", {
-                    staticClass: "fs-5 fw-light"
+                    staticClass: "fs-5 fw-light home-info-2"
                 }, [t._v("Customer support")]), a("p", {
                     staticClass: "fw-light mb-0 mt-n1 lh-xs"
                 }, [a("small", [t._v("BNBHarvest 24/7 provides you our knowledgable and experienced customer support team in "), a("a", {
@@ -1955,7 +1956,7 @@
                     attrs: {
                         scope: "row"
                     }
-                }, [n("span", [t._v(" Forever ")])])
+                }, [n("span", [t._v(" 120 ")])])
             }, function () {
                 var t = this,
                     e = t.$createElement,
@@ -1964,7 +1965,7 @@
                     attrs: {
                         scope: "row"
                     }
-                }, [n("span", [t._v(" 2% ")])])
+                }, [n("span", [t._v(" 2.5% ")])])
             }, function () {
                 var t = this,
                     e = t.$createElement,
@@ -1973,47 +1974,7 @@
                     attrs: {
                         scope: "row"
                     }
-                }, [n("span", [t._v(" ∞ ")])])
-            }, function () {
-                var t = this,
-                    e = t.$createElement,
-                    n = t._self._c || e;
-                return n("td", {
-                    attrs: {
-                        scope: "row"
-                    }
-                }, [n("button", {
-                    staticClass: "border-0 bg-transparent"
-                }, [n("span", {
-                    staticClass: "angle mb-1"
-                })])])
-            }, function () {
-                var t = this,
-                    e = t.$createElement,
-                    n = t._self._c || e;
-                return n("td", {
-                    attrs: {
-                        scope: "row"
-                    }
-                }, [n("span", [t._v(" 30 ")])])
-            }, function () {
-                var t = this,
-                    e = t.$createElement,
-                    n = t._self._c || e;
-                return n("td", {
-                    attrs: {
-                        scope: "row"
-                    }
-                }, [n("span", [t._v(" 5% ")])])
-            }, function () {
-                var t = this,
-                    e = t.$createElement,
-                    n = t._self._c || e;
-                return n("td", {
-                    attrs: {
-                        scope: "row"
-                    }
-                }, [n("span", [t._v(" 150% ")])])
+                }, [n("span", [t._v(" 300% ")])])
             }, function () {
                 var t = this,
                     e = t.$createElement,
@@ -2035,7 +1996,47 @@
                     attrs: {
                         scope: "row"
                     }
-                }, [n("span", [t._v(" 60 ")])])
+                }, [n("span", [t._v(" 35 ")])])
+            }, function () {
+                var t = this,
+                    e = t.$createElement,
+                    n = t._self._c || e;
+                return n("td", {
+                    attrs: {
+                        scope: "row"
+                    }
+                }, [n("span", [t._v(" 4% ")])])
+            }, function () {
+                var t = this,
+                    e = t.$createElement,
+                    n = t._self._c || e;
+                return n("td", {
+                    attrs: {
+                        scope: "row"
+                    }
+                }, [n("span", [t._v(" 140% ")])])
+            }, function () {
+                var t = this,
+                    e = t.$createElement,
+                    n = t._self._c || e;
+                return n("td", {
+                    attrs: {
+                        scope: "row"
+                    }
+                }, [n("button", {
+                    staticClass: "border-0 bg-transparent"
+                }, [n("span", {
+                    staticClass: "angle mb-1"
+                })])])
+            }, function () {
+                var t = this,
+                    e = t.$createElement,
+                    n = t._self._c || e;
+                return n("td", {
+                    attrs: {
+                        scope: "row"
+                    }
+                }, [n("span", [t._v(" 50 ")])])
             }, function () {
                 var t = this,
                     e = t.$createElement,
@@ -2053,7 +2054,7 @@
                     attrs: {
                         scope: "row"
                     }
-                }, [n("span", [t._v(" 210% ")])])
+                }, [n("span", [t._v(" 175% ")])])
             }, function () {
                 var t = this,
                     e = t.$createElement,
@@ -2075,7 +2076,7 @@
                     attrs: {
                         scope: "row"
                     }
-                }, [n("span", [t._v(" 90 ")])])
+                }, [n("span", [t._v(" 75 ")])])
             }, function () {
                 var t = this,
                     e = t.$createElement,
@@ -2093,7 +2094,7 @@
                     attrs: {
                         scope: "row"
                     }
-                }, [n("span", [t._v(" 270% ")])])
+                }, [n("span", [t._v(" 225% ")])])
             }, function () {
                 var t = this,
                     e = t.$createElement,
