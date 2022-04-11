@@ -1947,7 +1947,12 @@
                     attrs: {
                         scope: "col"
                     }
-                }, [n("small", [t._v("total")])]), n("td")])])
+                }, [n("small", [t._v("%daily")])]), n("td", {
+                    staticClass: "text-capitalize",
+                    attrs: {
+                        scope: "col"
+                    }
+                })])])
             }, function () {
                 var t = this,
                     e = t.$createElement,
