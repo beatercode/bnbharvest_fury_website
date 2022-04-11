@@ -4972,7 +4972,8 @@ fieldset:disabled .btn {
 
 .card.border-0.mb-3.adv::after,
 .card.border-0.mb-4.adv::after,
-.card.border.px-sm-5::after {
+.card.border.px-sm-5::after,
+.card.border.px-sm-6::after {
     content: '';
     position: absolute;
     inset: 4px;
@@ -9393,6 +9394,11 @@ fieldset:disabled .btn {
     }
 
     .px-sm-5 {
+        padding-right: 3rem !important;
+        padding-left: 3rem !important
+    }
+
+    .px-sm-6 {
         padding-right: 3rem !important;
         padding-left: 3rem !important
     }
@@ -17229,6 +17235,7 @@ body {
     color: #fff;
     margin: 0 auto;
     text-align: center;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -17239,10 +17246,14 @@ h1 {
 
 li {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1em;
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;
+}
+
+ul {
+    padding: 0;
 }
 
 li span {
@@ -17272,4 +17283,8 @@ li span {
     li span {
         font-size: calc(3.375rem * var(--smaller));
     }
+}
+
+.lauch-dashboard {
+    pointer-events: none; /* LAUNCH WEBSITE */
 }

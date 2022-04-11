@@ -1233,8 +1233,8 @@
                     }, [
 
                         n("div", { staticClass: "timerContainer" }, [
-                            n("h1", { attrs: { id: "timerHeadline" }}, "Countdown to launch!"),
-                            n("div", { attrs: { id: "timerCountdown" }, style: { display: "none" }}, [
+                            n("h1", { staticClass: "home-info", attrs: { id: "timerHeadline" } }, [t._v("Project launch in")]),
+                            n("div", { attrs: { id: "timerCountdown" }, style: { display: "inline-block" } }, [
                                 n("ul", {}, [
                                     n("li", {}, [
                                         n("span", { attrs: { id: "days" } }, []),
@@ -1254,7 +1254,7 @@
                                     ])
                                 ])
                             ],
-                            n("div", { attrs: { id: "timerContent" } }, "Porject is live!"))
+                                n("div", { attrs: { id: "timerContent" }, style: { display: "inline-block" } }, "Porject is live!"))
                         ])
 
                     ])])])])])])]),
@@ -1288,7 +1288,7 @@
                     }, [t._v("" + t._s(t.totalReferralEarnings) + " ")])]), n("div", {
                         staticClass: "col-12 col-sm-6 my-4 text-sm-center"
                     }, [n("div", [n("router-link", {
-                        staticClass: "btn btn-primary w-100 mt-3",
+                        staticClass: "btn btn-primary w-100 mt-3 lauch-dashboard",
                         attrs: {
                             to: "dashboard"
                         }
@@ -1412,10 +1412,14 @@
                             //e = new l.a("https://bsc-dataseed1.binance.org:443"),
                             e = new l.a("https://data-seed-prebsc-1-s1.binance.org:8545"),
                             n = new e.eth.Contract(this.getContractABI, this.getContractAddress);
-                        Promise.all([n.methods.getSiteInfo().call()]).then((function (n) {
-                            var a = Object(M["a"])(n, 1),
+                        Promise.all([
+                            n.methods.getSiteInfo().call(),
+                            n.methods.started()
+                        ]).then((function (n) {
+                            var a = Object(M["a"])(n, 2),
                                 s = a[0];
-                            t.totalInvested = Number(e.utils.fromWei(s._totalInvested.toString(), "ether")).toFixed(3), t.totalReferralEarnings = (Number(5 * t.totalInvested) / 100).toFixed(3)
+                            t.totalInvested = Number(e.utils.fromWei(s._totalInvested.toString(), "ether")).toFixed(3), 
+                            t.totalReferralEarnings = (Number(5 * t.totalInvested) / 100).toFixed(3)
                         }))
                     }
                 },
@@ -2636,3 +2640,46 @@
     }
 });
 //# sourceMappingURL=app.e001c9db.js.map
+(function () {
+    const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+    //I'm adding this section so I don't have to keep updating this pen every year :-)
+    //remove this if you don't need it
+    let today = new Date(),
+        dd = String(today.getDate()).padStart(2, "0"),
+        mm = String(today.getMonth() + 1).padStart(2, "0"),
+        yyyy = today.getFullYear(),
+        nextYear = yyyy,
+        dayMonth = "04/21/",
+        launch = dayMonth + yyyy;
+
+    today = mm + "/" + dd + "/" + yyyy;
+    //end
+
+    const countDown = new Date(launch).getTime();
+    var x = setInterval(function () {
+
+        const now = new Date().getTime(),
+            distance = countDown - now;
+
+        if (document.getElementById("days")) {
+            document.getElementById("days").innerText = Math.floor(distance / (day)),
+                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+            //do something later when date is reached
+            if (distance < 0) {
+                document.getElementById("timerHeadline").innerText = "Project is Live!";
+                document.getElementById("timerCountdown").style.display = "none";
+                document.getElementById("timerContent").style.display = "block";
+                clearInterval(x);
+                launched = true;
+            }
+        }
+        //seconds
+    }, 1000)
+}());
