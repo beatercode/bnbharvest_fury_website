@@ -142,7 +142,7 @@
                     }
                 }), a("span", {
                     staticClass: "text-primary fw-bold navbar-brand-text"
-                }, [t._v(" BNBHarvest ")])]), t.getUserAccount ? [a("div", {
+                }, [t._v(" BNB Brokers ")])]), t.getUserAccount ? [a("div", {
                     staticClass: "d-none d-sm-flex"
                 }, [a("p", {
                     staticClass: "mb-0 text-primary"
@@ -260,7 +260,7 @@
                     staticClass: "\n            d-md-flex\n            justify-content-center\n            text-center\n            align-items-center\n          "
                 }, [a("a", {
                     attrs: {
-                        href: "https://hazecrypto.net/busdharvest/",
+                        href: "https://hazecrypto.net/bnbbrokers/",
                         target: "_blank"
                     }
                 }, [a("img", {
@@ -269,7 +269,7 @@
                     }
                 })]), a("a", {
                     attrs: {
-                        href: "https://dappradar.com/binance-smart-chain/high-risk/busdharvest",
+                        href: "https://dappradar.com/binance-smart-chain/high-risk/bnbbrokers",
                         target: "_blank"
                     }
                 }, [a("img", {
@@ -278,7 +278,7 @@
                     }
                 })]), a("a", {
                     attrs: {
-                        href: "https://twitter.com/busdharvest",
+                        href: "https://twitter.com/bnbbrokers",
                         target: "_blank"
                     }
                 }, [a("img", {
@@ -1214,49 +1214,92 @@
                     n = t._self._c || e;
                 return n("div", {
                     staticClass: "loading loaded"
-                }, [n("div", [n("section", {
-                    staticClass: "top-section",
-                    attrs: {
-                        id: "home"
-                    }
-                }, [n("div", {
-                    staticClass: "container"
-                }, [n("div", {
-                    staticClass: "row justify-content-center"
-                }, [n("div", {
-                    staticClass: "col-12"
-                }, [n("div", {
-                    staticClass: "card border px-sm-5"
-                }, [n("div", {
-                    staticClass: "card-body"
-                }, [n("div", {
-                    staticClass: "row"
-                }, [t._m(0), n("div", {
-                    staticClass: "col-12 col-sm-6 my-4 text-sm-center"
-                }, [n("p", {
-                    staticClass: "card-subtitle"
-                }, [t._v("Total BNB Deposited")]), n("p", {
-                    staticClass: "card-title mb-0"
-                }, [t._v("" + t._s(t.totalInvested))])]), n("div", {
-                    staticClass: "col-12 col-sm-6 my-4 text-sm-center"
-                }, [n("p", {
-                    staticClass: "card-subtitle"
-                }, [t._v("Total Referral Earnings")]), n("p", {
-                    staticClass: "card-title mb-0"
-                }, [t._v("" + t._s(t.totalReferralEarnings) + " ")])]), n("div", {
-                    staticClass: "col-12 col-sm-6 my-4 text-sm-center"
-                }, [n("div", [n("router-link", {
-                    staticClass: "btn btn-primary w-100 mt-3",
-                    attrs: {
-                        to: "dashboard"
-                    }
-                }, [t._v(" Dashboard ")]), n("a", {
-                    staticClass: "btn btn-primary w-100 mt-3",
-                    attrs: {
-                        href: "http://busdharvest.com/docs.pdf",
-                        target: "_blank"
-                    }
-                }, [t._v("Information ")])], 1)]), t._m(1)])])])])])])]), t._m(2)])])
+                }, [n("div", [
+
+                    n("section", {
+                        staticClass: "top-section no-margin-bot"
+                    }, [n("div", {
+                        staticClass: "container"
+                    }, [n("div", {
+                        staticClass: "row justify-content-center"
+                    }, [n("div", {
+                        staticClass: "col-12"
+                    }, [n("div", {
+                        staticClass: "card border px-sm-5"
+                    }, [n("div", {
+                        staticClass: "card-body"
+                    }, [n("div", {
+                        staticClass: "row"
+                    }, [
+
+                        n("div", { staticClass: "timerContainer" }, [
+                            n("h1", { attrs: { id: "timerHeadline" }}, "Countdown to launch!"),
+                            n("div", { attrs: { id: "timerCountdown" }, style: { display: "none" }}, [
+                                n("ul", {}, [
+                                    n("li", {}, [
+                                        n("span", { attrs: { id: "days" } }, []),
+                                        t._v("DAYS")
+                                    ]),
+                                    n("li", {}, [
+                                        n("span", { attrs: { id: "hours" } }, []),
+                                        t._v("HOURS")
+                                    ]),
+                                    n("li", {}, [
+                                        n("span", { attrs: { id: "minutes" } }, []),
+                                        t._v("MINUTES")
+                                    ]),
+                                    n("li", {}, [
+                                        n("span", { attrs: { id: "seconds" } }, []),
+                                        t._v("SECONDS")
+                                    ])
+                                ])
+                            ],
+                            n("div", { attrs: { id: "timerContent" } }, "Porject is live!"))
+                        ])
+
+                    ])])])])])])]),
+
+                    n("section", {
+                        staticClass: "top-section"
+                    }, [n("div", {
+                        staticClass: "container"
+                    }, [n("div", {
+                        staticClass: "row justify-content-center"
+                    }, [n("div", {
+                        staticClass: "col-12"
+                    }, [n("div", {
+                        staticClass: "card border px-sm-5"
+                    }, [n("div", {
+                        staticClass: "card-body"
+                    }, [n("div", {
+                        staticClass: "row"
+                    }, [t._m(0), n("div", {
+                        staticClass: "col-12 col-sm-6 my-4 text-sm-center"
+                    }, [n("p", {
+                        staticClass: "card-subtitle"
+                    }, [t._v("Total BNB Deposited")]), n("p", {
+                        staticClass: "card-title mb-0"
+                    }, [t._v("" + t._s(t.totalInvested))])]), n("div", {
+                        staticClass: "col-12 col-sm-6 my-4 text-sm-center"
+                    }, [n("p", {
+                        staticClass: "card-subtitle"
+                    }, [t._v("Total Referral Earnings")]), n("p", {
+                        staticClass: "card-title mb-0"
+                    }, [t._v("" + t._s(t.totalReferralEarnings) + " ")])]), n("div", {
+                        staticClass: "col-12 col-sm-6 my-4 text-sm-center"
+                    }, [n("div", [n("router-link", {
+                        staticClass: "btn btn-primary w-100 mt-3",
+                        attrs: {
+                            to: "dashboard"
+                        }
+                    }, [t._v(" Dashboard ")]), n("a", {
+                        staticClass: "btn btn-primary w-100 mt-3",
+                        attrs: {
+                            href: "http://busdharvest.com/docs.pdf",
+                            target: "_blank"
+                        }
+                    }, [t._v("Information ")])], 1)]), t._m(1)])])])])])])]),
+                    t._m(2)])])
             },
             D = [function () {
                 var t = this,
@@ -1268,7 +1311,7 @@
                     staticClass: "text-center pb-3"
                 }, [n("p", {
                     staticClass: "fw-bold fs-2"
-                }, [t._v("BNBHarvest")]), n("p", { staticClass: "home-info" }, [t._v(" #TOP Coin Community yield farm")]),
+                }, [t._v("BNB Brokers")]), n("p", { staticClass: "home-info" }, [t._v(" #TOP Coin Community yield farm")]),
                 n("p", {}, [t._v(" on Binance Smart Chain ")])])])
             }, function () {
                 var t = this,
@@ -1301,7 +1344,7 @@
                     staticClass: "community-block"
                 }, [a("p", {
                     staticClass: "mb-3 text-center fs-4"
-                }, [t._v(" Start your yield farm journey "), a("br"), t._v(" with BNBHarvest community ")]), a("div", {
+                }, [t._v(" Start your yield farm journey "), a("br"), t._v(" with BNB Brokers community ")]), a("div", {
                     staticClass: "row"
                 }, [a("div", {
                     staticClass: "col-md-7 col-lg-4 mx-auto text-center mt-3"
@@ -1336,10 +1379,10 @@
                     staticClass: "fs-5 fw-light home-info-2"
                 }, [t._v("Customer support")]), a("p", {
                     staticClass: "fw-light mb-0 mt-n1 lh-xs"
-                }, [a("small", [t._v("BNBHarvest 24/7 provides you our knowledgable and experienced customer support team in "), a("a", {
+                }, [a("small", [t._v("BNB Brokers 24/7 provides you our knowledgable and experienced customer support team in "), a("a", {
                     staticClass: "text-dark",
                     attrs: {
-                        href: "https://t.me/BUSDHarvest",
+                        href: "https://t.me/bnbbrokers",
                         target: "_blank"
                     }
                 }, [t._v("Telegram.")])])])])])])])])
@@ -1474,7 +1517,7 @@
                     attrs: {
                         id: "copy-link"
                     }
-                }, [t._v(" " + t._s("https://bnbharvest.com/?ref=" + t.getUserAccount) + " ")])]), a("div", {
+                }, [t._v(" " + t._s("https://bnbrokers.com/?ref=" + t.getUserAccount) + " ")])]), a("div", {
                     staticClass: "tooltip-container"
                 }, [a("button", {
                     staticClass: "btn btn-primary py-2",
@@ -1524,13 +1567,13 @@
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
                     staticClass: "text-capitalize me-3 full-width-right"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), 
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]),
                 a("div", [a("span", {
                     staticClass: "text-capitalize me-3"
                 }, [t._v("Total Earn: " + t._s(t.total_earning_one) + " BNB")]), a("button", {
                     staticClass: "border-0 bg-transparent ms-auto",
                     on: {
-                        click: function(e) {
+                        click: function (e) {
                             t.rate = 2.5, t.showModal = !t.showModal
                         }
                     }
@@ -1608,13 +1651,13 @@
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
                     staticClass: "text-capitalize me-3 full-width-right"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), 
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]),
                 a("div", [a("span", {
                     staticClass: "text-capitalize me-3"
                 }, [t._v("Total Earn: " + t._s(t.total_earning_two) + " BNB")]), a("button", {
                     staticClass: "border-0 bg-transparent ms-auto",
                     on: {
-                        click: function(e) {
+                        click: function (e) {
                             t.rate = 4, t.showModal = !t.showModal
                         }
                     }
@@ -1692,13 +1735,13 @@
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
                     staticClass: "text-capitalize me-3 full-width-right"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), 
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]),
                 a("div", [a("span", {
                     staticClass: "text-capitalize me-3"
                 }, [t._v("Total Earn: " + t._s(t.total_earning_three) + " BNB")]), a("button", {
                     staticClass: "border-0 bg-transparent ms-auto",
                     on: {
-                        click: function(e) {
+                        click: function (e) {
                             t.rate = 3.5, t.showModal = !t.showModal
                         }
                     }
@@ -1776,13 +1819,13 @@
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
                     staticClass: "text-capitalize me-3 full-width-right"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), 
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]),
                 a("div", [a("span", {
                     staticClass: "text-capitalize me-3"
                 }, [t._v("Total Earn: " + t._s(t.total_earning_four) + " BNB")]), a("button", {
                     staticClass: "border-0 bg-transparent ms-auto",
                     on: {
-                        click: function(e) {
+                        click: function (e) {
                             t.rate = 3, t.showModal = !t.showModal
                         }
                     }

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>BNBHarvest</title>
+    <title>BNB Brokers</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,12 +14,12 @@
     <link rel="icon" type="image/png" href="/favicon.ico">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta data-hid="description" name="description"
-        content="Join the fastest-growing BUSD yield farm on Binance Smart Chain. Stake BUSD, earn up to 5% daily return.">
+        content="Join the fastest-growing BNB yield farm on Binance Smart Chain. Stake BNB, earn up to 5% daily return.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://busdharvest.com">
+    <meta property="og:url" content="https://bnbbrokers.com">
     <meta property="og:title" content="Native coin yield farm on Binance Smart Chain">
     <meta property="og:description"
-        content="Join the fastest-growing BUSD yield farm on Binance Smart Chain. Stake BUSD, earn up to 5% BUSD daily return.">
+        content="Join the fastest-growing BNB yield farm on Binance Smart Chain. Stake BNB, earn up to 4% BNB daily return.">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&amp;display=swap">
     <link href="/css/app.fac834cc.css" rel="preload" as="style">
     <link href="/js/app.e001c9db.js" rel="preload" as="script">
@@ -34,7 +34,53 @@
         window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser 
     }
 </script>
-<body><noscript><strong>We're sorry but busdharvest doesn't work properly without JavaScript enabled. Please enable it
+<script defer>
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            //I'm adding this section so I don't have to keep updating this pen every year :-)
+            //remove this if you don't need it
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy,
+                dayMonth = "04/11/",
+                birthday = dayMonth + yyyy;
+
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+                birthday = dayMonth + nextYear;
+            }
+            //end
+
+            const countDown = new Date(birthday).getTime(),
+                x = setInterval(function () {
+
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                    //do something later when date is reached
+                    if (distance < 0) {
+                        document.getElementById("timerHeadline").innerText = "Project is Live!";
+                        //document.getElementById("timerCountdown").style.display = "none";
+                        //document.getElementById("timerContent").style.display = "block";
+                        clearInterval(x);
+                    }
+                    //seconds
+                }, 0)
+        }());
+</script>
+
+<body><noscript><strong>We're sorry but bnbbrokers doesn't work properly without JavaScript enabled. Please enable it
             to continue.</strong></noscript>
     <div id="app"></div>
     <script src="/js/chunk-vendors.fbe753ac.js"></script>
