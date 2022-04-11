@@ -1524,7 +1524,23 @@
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
                     staticClass: "text-capitalize me-3 full-width-right"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")])]) : t._e(), a("form", {
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), 
+                a("div", [a("span", {
+                    staticClass: "text-capitalize me-3"
+                }, [t._v("Total Earn: " + t._s(t.total_earning_one) + " BNB")]), a("button", {
+                    staticClass: "border-0 bg-transparent ms-auto",
+                    on: {
+                        click: function(e) {
+                            t.rate = 2.5, t.showModal = !t.showModal
+                        }
+                    }
+                }, [a("img", {
+                    staticClass: "me-3",
+                    attrs: {
+                        src: n("f0ba")
+                    }
+                })])])
+                ]) : t._e(), a("form", {
                     staticClass: "w-lg-75 ms-lg-auto ps-md-4"
                 }, [a("fieldset", {
                     staticClass: "d-flex w-lg-75 ms-auto"
@@ -1592,7 +1608,23 @@
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
                     staticClass: "text-capitalize me-3 full-width-right"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")])]) : t._e(), a("form", {
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), 
+                a("div", [a("span", {
+                    staticClass: "text-capitalize me-3"
+                }, [t._v("Total Earn: " + t._s(t.total_earning_two) + " BNB")]), a("button", {
+                    staticClass: "border-0 bg-transparent ms-auto",
+                    on: {
+                        click: function(e) {
+                            t.rate = 4, t.showModal = !t.showModal
+                        }
+                    }
+                }, [a("img", {
+                    staticClass: "me-3",
+                    attrs: {
+                        src: n("f0ba")
+                    }
+                })])])
+                ]) : t._e(), a("form", {
                     staticClass: "w-lg-75 ms-lg-auto ps-md-4"
                 }, [a("fieldset", {
                     staticClass: "d-flex w-lg-75 ms-auto"
@@ -1660,7 +1692,23 @@
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
                     staticClass: "text-capitalize me-3 full-width-right"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")])]) : t._e(), a("form", {
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), 
+                a("div", [a("span", {
+                    staticClass: "text-capitalize me-3"
+                }, [t._v("Total Earn: " + t._s(t.total_earning_three) + " BNB")]), a("button", {
+                    staticClass: "border-0 bg-transparent ms-auto",
+                    on: {
+                        click: function(e) {
+                            t.rate = 3.5, t.showModal = !t.showModal
+                        }
+                    }
+                }, [a("img", {
+                    staticClass: "me-3",
+                    attrs: {
+                        src: n("f0ba")
+                    }
+                })])])
+                ]) : t._e(), a("form", {
                     staticClass: "w-lg-75 ms-lg-auto ps-md-4"
                 }, [a("fieldset", {
                     staticClass: "d-flex w-lg-75 ms-auto"
@@ -1728,7 +1776,23 @@
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
                     staticClass: "text-capitalize me-3 full-width-right"
-                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")])]) : t._e(), a("form", {
+                }, [t._v("BNB Available: " + t._s(t.BNBBalance) + " ")]), 
+                a("div", [a("span", {
+                    staticClass: "text-capitalize me-3"
+                }, [t._v("Total Earn: " + t._s(t.total_earning_four) + " BNB")]), a("button", {
+                    staticClass: "border-0 bg-transparent ms-auto",
+                    on: {
+                        click: function(e) {
+                            t.rate = 3, t.showModal = !t.showModal
+                        }
+                    }
+                }, [a("img", {
+                    staticClass: "me-3",
+                    attrs: {
+                        src: n("f0ba")
+                    }
+                })])])
+                ]) : t._e(), a("form", {
                     staticClass: "w-lg-75 ms-lg-auto ps-md-4"
                 }, [a("fieldset", {
                     staticClass: "d-flex w-lg-75 ms-auto"
@@ -1942,12 +2006,12 @@
                     attrs: {
                         scope: "col"
                     }
-                }, [n("small", [t._v("%daily")])]), n("td", {
+                }, [n("small", [t._v("% daily")])]), n("td", {
                     staticClass: "text-capitalize",
                     attrs: {
                         scope: "col"
                     }
-                }, [n("small", [t._v("%daily")])]), n("td", {
+                }, [n("small", [t._v("% total")])]), n("td", {
                     staticClass: "text-capitalize",
                     attrs: {
                         scope: "col"
@@ -2301,6 +2365,7 @@
                         plan_two_amount: null,
                         plan_three_amount: null,
                         plan_four_amount: null,
+                        total_earning_one: 0,
                         total_earning_two: 0,
                         total_earning_three: 0,
                         total_earning_four: 0,
@@ -2367,15 +2432,16 @@
                     calculateTotalEarning: function (t, e) {
                         switch (Number(e)) {
                             case 0:
+                                this.total_earning_one = Number(300 * t.target.value) / 100;
                                 break;
                             case 1:
-                                this.total_earning_two = Number(150 * t.target.value) / 100;
+                                this.total_earning_two = Number(140 * t.target.value) / 100;
                                 break;
                             case 2:
-                                this.total_earning_three = Number(210 * t.target.value) / 100;
+                                this.total_earning_three = Number(175 * t.target.value) / 100;
                                 break;
                             case 3:
-                                this.total_earning_four = Number(270 * t.target.value) / 100;
+                                this.total_earning_four = Number(225 * t.target.value) / 100;
                                 break
                         }
                     },

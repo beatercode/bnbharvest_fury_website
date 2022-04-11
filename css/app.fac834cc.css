@@ -6166,11 +6166,16 @@ fieldset:disabled .btn {
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #fff;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    color: #fff !important;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 16px;
-    outline: 0
+    outline: 0;
+    text-align: center !important;
+    max-width: 351px;
+    margin: auto;
 }
 
 .modal-backdrop {
