@@ -17250,10 +17250,11 @@ li {
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;
+    width: 120px;
 }
 
 ul {
-    padding: 0;
+    padding-top: 20px;
 }
 
 li span {
@@ -17277,11 +17278,14 @@ li span {
     }
 
     li {
-        font-size: calc(1.125rem * var(--smaller));
+        font-size: calc(1rem * var(--smaller));
+        width: 70px;
+        padding: 0;
+        padding-top: 10px;
     }
 
     li span {
-        font-size: calc(3.375rem * var(--smaller));
+        font-size: calc(3rem * var(--smaller));
     }
 }
 
