@@ -1225,7 +1225,7 @@
                     }, [n("div", {
                         staticClass: "col-12"
                     }, [n("div", {
-                        staticClass: "card border px-sm-5"
+                        staticClass: "card border px-sm-6"
                     }, [n("div", {
                         staticClass: "card-body"
                     }, [n("div", {
