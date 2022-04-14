@@ -289,6 +289,19 @@
                     attrs: {
                         src: n("aa24")
                     }
+                })]), a("a", {
+                    attrs: {
+                        href: "https://medium.com/bnbbrokers",
+                        target: "_blank"
+                    }
+                }, [a("img", {
+                    staticClass: "mx-2",
+                    staticStyle: {
+                        height: "60px"
+                    },
+                    attrs: {
+                        src: n("aa25")
+                    }
                 })])])])])])
             }],
             r = n("1da1"),
@@ -1311,7 +1324,7 @@
                     staticClass: "text-center pb-3"
                 }, [n("p", {
                     staticClass: "fw-bold fs-2"
-                }, [t._v("BNB Brokers")]), n("p", { staticClass: "home-info" }, [t._v(" #TOP Coin Community yield farm")]),
+                }, [t._v("BNB Brokers")]), n("p", { staticClass: "home-info" }, [t._v(" low risk high reward yield farm")]),
                 n("p", {}, [t._v(" on Binance Smart Chain ")])])])
             }, function () {
                 var t = this,
@@ -1328,7 +1341,7 @@
                 }, [t._v("Verified Contract ")]), n("a", {
                     staticClass: "btn btn-primary w-100 mt-3",
                     attrs: {
-                        href: "https://t.me/BUSDHarvest",
+                        href: "https://t.me/Bnbbrokers",
                         target: "_blank"
                     }
                 }, [t._v("Telegram ")])])])
@@ -1418,8 +1431,8 @@
                         ]).then((function (n) {
                             var a = Object(M["a"])(n, 2),
                                 s = a[0];
-                            t.totalInvested = Number(e.utils.fromWei(s._totalInvested.toString(), "ether")).toFixed(3), 
-                            t.totalReferralEarnings = (Number(5 * t.totalInvested) / 100).toFixed(3)
+                            t.totalInvested = Number(e.utils.fromWei(s._totalInvested.toString(), "ether")).toFixed(3),
+                                t.totalReferralEarnings = (Number(5 * t.totalInvested) / 100).toFixed(3)
                         }))
                     }
                 },
@@ -1521,7 +1534,7 @@
                     attrs: {
                         id: "copy-link"
                     }
-                }, [t._v(" " + t._s("https://bnbrokers.com/?ref=" + t.getUserAccount) + " ")])]), a("div", {
+                }, [t._v(" " + t._s("https://bnbbrokers.app/?ref=" + t.getUserAccount) + " ")])]), a("div", {
                     staticClass: "tooltip-container"
                 }, [a("button", {
                     staticClass: "btn btn-primary py-2",
@@ -1567,7 +1580,7 @@
                     staticClass: "bg-secondary rounded-bottom p-3"
                 }, [a("div", {
                     staticClass: "p-1 pe-3"
-                }, [t.getUserAccount ? a("div", {
+                }, [a("div", {
                     staticClass: "d-flex justify-content-between mb-3 for-xs"
                 }, [a("span", {
                     staticClass: "text-capitalize me-3 full-width-right"
@@ -1587,7 +1600,7 @@
                         src: n("f0ba")
                     }
                 })])])
-                ]) : t._e(), a("form", {
+                ]), a("form", {
                     staticClass: "w-lg-75 ms-lg-auto ps-md-4"
                 }, [a("fieldset", {
                     staticClass: "d-flex w-lg-75 ms-auto"
@@ -2618,6 +2631,9 @@
     9: function (t, e) { },
     aa24: function (t, e, n) {
         t.exports = n.p + "img/twitter.095df65.21b808ec.png"
+    },
+    aa25: function (t, e, n) {
+        t.exports = n.p + "img/medium.logo.png"
     },
     c042: function (t, e, n) {
         t.exports = n.p + "img/support.401595ad.png"
